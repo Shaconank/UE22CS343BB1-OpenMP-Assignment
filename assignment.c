@@ -944,7 +944,7 @@ void printProcessorState(int processorId, processorNode node)
     fprintf(file, "|------------------------------------------|\n");
     for (int i = 0; i < MEM_SIZE; i++)
     {
-        fprintf(file, "|  %3d  |  0x%02X   |  %2s   |   0x%u   |\n",
+        fprintf(file, "|  %3d  |  0x%02X   |  %2s   |   %u   |\n",
                 i, (processorId << 4) + i, dirStateStr[node.directory[i].state],
                 node.directory[i].bitVector);
     }
