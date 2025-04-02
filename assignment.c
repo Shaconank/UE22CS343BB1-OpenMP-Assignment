@@ -8,12 +8,7 @@
 #define MEM_SIZE 16
 #define MSG_BUFFER_SIZE 256
 #define MAX_INSTR_NUM 32
-
-/* do nothing */
-#define NOP \
-    do      \
-    {       \
-    } while (0)
+#define NOP do{} while (0)
 
 typedef unsigned char byte;
 
